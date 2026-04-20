@@ -1,0 +1,10 @@
+FROM introduccion GOTO bienvenida
+SET sistema = IMAGIN
+READANSWER nombre_usuario
+SET jugador = nombre_usuario
+
+FROM bienvenida GOTO pasillo
+OPTION(Entrar a la libreria, Correr al jardin)
+
+FROM pasillo GOTO final_feliz
+DISPLAYEND Has completado la aventura con exito
